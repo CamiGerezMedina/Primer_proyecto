@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-    /*COMIENZO ENCABEZADO*/
+/*COMIENZO ENCABEZADO*/
 
 .encabezado {
     padding: 217px;
@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
 }
 
-.encabezado li, 
+.encabezado li,
 a {
     display: inline;
     margin-inline: 15px;
@@ -27,18 +27,15 @@ a {
     text-decoration: underline;
 }
 
-
 .menu__nav {
     width: 100%;
     height: 10%;
     text-align: center;
 }
 
-
 .menu__nav li {
     background-color: rgba(240, 248, 255, 0.375);
 }
-
 
 .nombre {
     text-align: center;
@@ -46,11 +43,11 @@ a {
     font-family: 'Lobster Two', cursive;
     font-size: 67px;
 }
-    /*FIN ENCABEZADO*/
+
+/*FIN ENCABEZADO*/
 
 
-    /*COMIENZO CARTAS INDEX*/
-
+/*COMIENZO CARTAS INDEX*/
 
 .carta {
     margin: 30px 400px 0px 70px;
@@ -60,6 +57,15 @@ a {
     display: flex;
     align-items: center;
 }
+
+.carta {
+    -webkit-animation:slit-in-vertical .45s ease-out both;
+    animation:slit-in-vertical .45s ease-out both;
+    animation-delay: .2s;
+    animation-duration: 1s;
+}
+ @-webkit-keyframes slit-in-vertical{0%{-webkit-transform:translateZ(-800px) rotateY(90deg);transform:translateZ(-800px) rotateY(90deg);opacity:0}54%{-webkit-transform:translateZ(-160px) rotateY(87deg);transform:translateZ(-160px) rotateY(87deg);opacity:1}100%{-webkit-transform:translateZ(0) rotateY(0);transform:translateZ(0) rotateY(0)}}@keyframes slit-in-vertical{0%{-webkit-transform:translateZ(-800px) rotateY(90deg);transform:translateZ(-800px) rotateY(90deg);opacity:0}54%{-webkit-transform:translateZ(-160px) rotateY(87deg);transform:translateZ(-160px) rotateY(87deg);opacity:1}100%{-webkit-transform:translateZ(0) rotateY(0);transform:translateZ(0) rotateY(0)}}
+
 
 .carta__titulo {
     text-align: center;
@@ -75,12 +81,13 @@ a {
     padding: 20px;
     font-family: 'Roboto Slab', serif;
     font-size: small;
-    
+
 }
-    /*FIN CARTAS INDEX*/
+
+/*FIN CARTAS INDEX*/
 
 
-    /*COMIENZO SECCIÓN DESTACADOS*/
+/*COMIENZO SECCIÓN DESTACADOS*/
 
 .contenedor {
     display: grid;
@@ -98,20 +105,29 @@ a {
 
 .destacados {
     box-sizing: content-box;
-    border:solid;
+    border: solid;
     background-color: rgb(169 169 169 / 22%);
     width: 300px;
-
 }
 
-    /*FIN SECCIÓN DESTACADOS*/
+.destacados {
+    transition: .3s;
+}
+
+.destacados:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/*FIN SECCIÓN DESTACADOS*/
 
 
-    /*COMIENZO SECCIÓN SUGERENCIAS*/
+/*COMIENZO SECCIÓN SUGERENCIAS*/
 
 .subtitulo {
     font-size: 30px;
-    font-family: 'Roboto Slab', serif;;
+    font-family: 'Roboto Slab', serif;
+    ;
     text-align: center;
     padding-top: 60px;
 }
@@ -125,7 +141,6 @@ a {
     background: 500px;
 }
 
-
 .input__reseñas,
 .form__reseñas {
     padding-inline: 50px;
@@ -136,14 +151,16 @@ a {
     margin: 10px;
     padding: 3px;
 }
-    /*FIN SECCIÓN SUGERENCIAS*/
+
+/*FIN SECCIÓN SUGERENCIAS*/
 
 
-    /*COMIENZO SECCIÓN RESEÑAS*/
+/*COMIENZO SECCIÓN RESEÑAS*/
 
 .subtitulo__reseñas {
     font-size: 30px;
-    font-family: 'Roboto Slab', serif;;
+    font-family: 'Roboto Slab', serif;
+    ;
     text-align: center;
     padding-top: 60px;
 }
@@ -168,10 +185,12 @@ a {
     margin-left: 262px;
     margin-top: -16px;
 }
-    /*FIN SECCIÓN RESEÑAS*/
+
+/*FIN SECCIÓN RESEÑAS*/
 
 
-    /*COMIENZO CONTACTO*/
+/*COMIENZO CONTACTO*/
+
 .formulario {
     display: inline-grid;
     text-align-last: center;
@@ -184,7 +203,7 @@ a {
     padding: 30px;
 }
 
-.form  {
+.form {
     width: 100%;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -214,10 +233,20 @@ a {
 #boton:hover {
     cursor: pointer;
 }
-    /*FIN CONTACTO*/
+
+/*FIN CONTACTO*/
 
 
-    /*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 920px) {
+
+    /*DESTACADOS*/
+
+    .contenedor {
+        display: flex
+    }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -270,6 +299,7 @@ a {
     .destacados:nth-child(3) {
         margin-block: 30px;
     }
+
     .destacados:nth-child(6) {
         margin-bottom: 30px;
     }

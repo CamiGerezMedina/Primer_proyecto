@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | A Donde Vamos?</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
@@ -14,100 +15,135 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap');
     </style>
 </head>
-
 <body>
-    <header class="encabezado">
-        <h1 class="nombre">A Donde Vamos? </h1>
-        <!--menu de navegacion-->
-        <nav class="menu__nav">
-            <ul>
-                <li>
-                    <a class="active" href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./destacados.html">Destacados</a>
-                </li>
-                <li>
-                    <a href="./sugerencias.html">Sugerencias</a>
-                </li>
-                <li>
-                    <a href="./reseñas.html">Reseñas</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destacados.html">Destacados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sugerencias.html">Sugerencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reseñas.html">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        <!-- fin del menu de navegacion -->
-    </header>
-    <!-- comienzo de cartas -->
-    <main>
-        <section class="section__carta">
-        <div class="carta">
-            <div><img class="carta__imagen" src="./img/BarDanzon.png" alt="Bar Danzon"></div>
-            <div><h2 class="carta__titulo">Bar Danzón</h2>
-                <div class="carta__parrafo">
-            <p>Mucho más que un bar, con estilo neoyorkino el Gran Bar Danzón fue pionero en la
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <section class="hero d-flex justify-content-center align-items-center">
+    <h1 class="titulo">A Donde Vamos?</h1>
+    </section>
+    <div class="card mb-3 mt-5" style="max-width: 920px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/BarDanzon.png" class="img-fluid rounded-center" alt="Bar Danzon">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Bar Danzon</h5>
+              <p class="card-text">Mucho más que un bar, con estilo neoyorkino el Gran Bar Danzón fue pionero en la
                 barra de vinos por copa, rescató los cócteles clásicos porteños en decadencia e instaló el pairing con
                 la cocina. La barra, con unos veinte bancos altos, fue y es un símbolo único en su especie, iluminado
                 con estrellitas. Hasta el living central, con cómodos sofás, es bueno para beber y comer en modo
-                relajado y en grupo. A esto se le suma el sushi, una delicia hecha arte. El wine bar, a altura normal
-                y con la vinoteca en la pared con botellas elegidas, es especial para sentarse de a dos y degustar
-                vinos por copa con bocadillos o platos bien elegidos. Un destino elegido por varias edades, un
-                búnker de cemento insonorizado con música en volumen ascendente que sube con la noche, a veces
-                demasiado, con iluminación correcta y agradable.</p></div></div>
+                relajado y en grupo.El wine bar, a altura normal y con la vinoteca en la pared con botellas elegidas, 
+                es especial para sentarse de a dos y degustar vinos por copa con bocadillos o platos bien elegidos. 
+                Un destino elegido por varias edades, un búnker de cemento insonorizado con música en volumen ascendente
+                que sube con la noche, a veces demasiado, con iluminación correcta y agradable.</p>
+            </div>
+          </div>
         </div>
-        <div class="carta">
-            <div><img class="carta__imagen" src="./img/BasaBar.jpg" alt="Basa Bar"></div>
-            <div><h2 class="carta__titulo">Basa Bar</h2>
-                <div class="carta__parrafo">
-            <p>BASA es una propuesta gastronómica original con un diseño moderno y minimalista
+      </div>
+      <div class="card mb-3" style="max-width: 920px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/BasaBar.jpg" class="img-fluid rounded-start" alt="Basa Bar">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Basa Bar</h5>
+              <p class="card-text">BASA es una propuesta gastronómica original con un diseño moderno y minimalista
                 desarrollado en desniveles. Un espacio protagonizado por una de las mejores barras de la ciudad.
                 La propuesta gastronómica sorprende con un menú compuesto de platos sencillos combinando sabores,
                 texturas y contrastes, convirtiendo productos de alta calidad en deliciosos platos reconfortantes. Se
                 destacan opciones de picoteo, ensaladas, pastas caseras, carnes a la parrilla, a la plancha, pescados y
                 mariscos. BASA combina excelente cocina, una de las barras más atractivas de Buenos Aires, y un ambiente
-                moderno para disfrutar de una salida inolvidable.</p></div></div>
+                moderno para disfrutar de una salida inolvidable.</p>
+            </div>
+          </div>
         </div>
-        <div class="carta">
-            <div><img class="carta__imagen" src="./img/BotanicoBar.jpg" alt="Parque Bar"></div>
-            <div><h2 class="carta__titulo">Parque Bar</h2>
-                <div class="carta__parrafo">
-            <p>Envuelto en una de las zonas más movidas de la ciudad, este bar en el corazón de
+      </div>
+      <div class="card mb-3" style="max-width: 920px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/BotanicoBar.jpg" class="img-fluid rounded-start" alt="Parque Bar">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Parque Bar</h5>
+              <p class="card-text">Envuelto en una de las zonas más movidas de la ciudad, este bar en el corazón de
                 Palermo Soho ofrece cócteles clásicos e innovadores en el medio de un sinfín de ramas y plantas.
                 Conocido como el “bar botánico”, Parque también cuenta con un patio a cielo abierto, si llegás a tener
                 frío, ¡ofrecen ponchos para taparse!. El listado de tragos está organizado en el menú de acuerdo con el
                 país de origen o influencia, resultando en una extensa opción de clásicos e innovaciones para todos los
-                gustos.</p></div></div>
-        </div> 
-        <div class="carta">
-            <div><img class="carta__imagen" src="./img/OhNoLulu.jpg" alt="Oh No! Lulu"></div>
-            <div><h2 class="carta__titulo">OH No! Lulu Bar</h2>
-                <div class="carta__parrafo">
-            <p>Homenaje a la cultura tiki: la propuesta de OH No! Lulu, es un mix ideal entre
+                gustos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 920px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/OhNoLulu.jpg" class="img-fluid rounded-start" alt="Oh No! Lulu">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Oh No! Lulu Bar</h5>
+              <p class="card-text">Homenaje a la cultura tiki: la propuesta de OH No! Lulu, es un mix ideal entre
                 excelente gastronomía, un ambiente relajado y toda la onda para pasar un buen rato tanto en pareja como
                 con amigos. Ni bien uno entra, se ve todo el ambiente súper decorado y te transportan a Hawaii. Vas a
                 encontrarte con muchos tragos riquísimos, exóticos y con los vasos más locos que existen. Además su
-                cocina hawaiana se combina con toques asiáticos e internacionales.</p></div></div>
+                cocina hawaiana se combina con toques asiáticos e internacionales.</p>
+            </div>
+          </div>
         </div>
-        <div class="carta">
-            <div><img class="carta__imagen" src="./img/PresidenteBar.jpg" alt="Presidente Bar"></div>
-            <div><h2 class="carta__titulo">Presidente Bar</h2>
-                <div class="carta__parrafo">
-            <p>En pleno corazón de Recoleta y en un edificio de época, está Presidente Bar. Una 
+      </div>
+      <div class="card mb-5" style="max-width: 920px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/PresidenteBar.jpg" class="img-fluid rounded-start"  alt="Presidente Bar">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Presidente Bar</h5>
+              <p class="card-text">En pleno corazón de Recoleta y en un edificio de época, está Presidente Bar. Una 
                 de las cuestiones que más llama la atención es la fachada del lugar. Se trata de un petit hotel que 
                 recibe a los visitantes con lucecitas en la puerta y una placa que devela el nombre. Una vez adentro, 
                 se debe atravesar una cortina de terciopelo hasta llegar al salón principal donde la barra es la 
                 principal protagonista. Está retroiluminada con lámparas de época que le dan un toque especial al 
                 ambiente que funciona como un túnel en el tiempo. A este espacio, se le suma el jardín de invierno y 
-                una biblioteca oculta que es un rincón para eventos especiales e íntimos con barra propia.</p></div></div>
+                una biblioteca oculta que es un rincón para eventos especiales e íntimos con barra propia.</p>
+            </div>
+          </div>
         </div>
-        </section>
-    </main>
-    <!-- fin de cartas -->
+      </div>
     <footer>
         © 2022 A Donde Vamos?
     </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

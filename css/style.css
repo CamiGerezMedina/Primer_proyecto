@@ -4,7 +4,28 @@
     box-sizing: border-box;
 }
 
-/*COMIENZO ENCABEZADO*/
+/*ENCABEZADO CON BOOTSTRAP EN INDEX Y DESTACADOS*/
+
+.hero{
+    background-image: url(../img/destacada-bares2.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+}
+
+.navbar-expand-lg {
+    background-color: rgba(255, 140, 0, 0.084);
+}
+
+.titulo {
+    color: rgb(17 0 255 / 93%);
+    font-family: 'Lobster Two', cursive;
+    font-size: 67px;
+    margin-top: -50px;
+}
+
+/*FIN ENCABEZADO CON BOOTSTRAP EN INDEX Y DESTACADOS*/
+
+/*ENCABEZADO*/
 
 .encabezado {
     padding: 217px;

@@ -15,9 +15,13 @@
     </style>
 </head>
 <body>
+    <!--COMIENZO NAV CON BOOTSTRAP-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Inicio</a>
@@ -42,15 +46,21 @@
           </div>
         </div>
       </nav>
+      <!--FIN NAV CON BOOTSTRAP-->
+
+      <!--COMIENZO ENCABEZADO-->
       <section class="hero d-flex justify-content-center align-items-center">
         <h1 class="titulo">Destacados</h1>
       </section>
+      <!--FIN ENCABEZADO-->
+
+      <!--COMIENZO CARDS CON BOOTSTRAP-->
       <div class="row row-cols-3 row-cols-md-3 g-4 mt-5">
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/ReyDeCopasBar.jpg" class="card-img-top" alt="Bar Rey de Copas">
           <div class="card-body">
-            <h5 class="card-title">Bar Rey de Copas</h5>
+            <h5 class="card-title text-center">Bar Rey de Copas</h5>
             <p class="card-text">Rey de Copas se encuentra en una vieja casona de Palermo Soho y ofrece un multiespacio para aquellos
               amantes del arte y de la buena gastronomía. Cuenta con una cálida ambientación, piezas de arte en
               cada ambiente del lugar y un techo corredizo que permite ver las estrellas. En la carta podés
@@ -58,11 +68,11 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/Uptownbar.jpg" class="card-img-top" alt="Bar Uptown">
           <div class="card-body">
-            <h5 class="card-title">Uptown Bar</h5>
+            <h5 class="card-title text-center">Uptown Bar</h5>
             <p class="card-text">Revolucionario por donde se lo mire, Uptown recrea magníficamente una estación de metro Neoyorquina, pero
               es un bar que tan solo al bajar esas escaleras te transporta directamente allí. Es una réplica tan
               exacta que hay que pasar el torniquete y presionar el botón verde que abre las puertas del vagón. Y no
@@ -72,11 +82,11 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/TheHoleBar.jpg" class="card-img-top" alt="The Hole Bar">
           <div class="card-body">
-            <h5 class="card-title">The Hole Bar</h5>
+            <h5 class="card-title text-center">The Hole Bar</h5>
             <p class="card-text">The Hole es un bar conceptual ubicado en Palermo que recrea la prisión de Alcatraz, es un lugar lúgubre
               con celdas diseminadas en dos pisos. Con una carta de tragos premium y cócteles diseñados por bartenders
               reconocidos, es un bar que ofrece la posibilidad de experimentar una sensación única, trasladándote a un
@@ -84,11 +94,11 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/TresMonos.jpg" class="card-img-top" alt="Bar Tres Monos">
           <div class="card-body">
-            <h5 class="card-title">Bar Tres Monos</h5>
+            <h5 class="card-title text-center">Bar Tres Monos</h5>
             <p class="card-text">Se trata de un lugar de encuentro, para beber, conocer gente y construir historias. A la hora de la carta
               de cócteles, en este bar se enfocan en buscar nuevos sabores con preparaciones simples y ricas y
               técnicas novedosas. En Tres Monos le preparan al cliente el cóctel que le pida, esté o no en su carta.
@@ -98,11 +108,11 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/VictoriaBrownBar.jpg" class="card-img-top" alt="Bar Victoria Brown">
           <div class="card-body">
-            <h5 class="card-title">Victoria Brown Bar</h5>
+            <h5 class="card-title text-center">Victoria Brown Bar</h5>
             <p class="card-text">Victoria Brown está inspirado en la época victoriana, mezcla de tradición y modernidad, el bar es una
               celebración del poder de la invención más importante del último siglo: la máquina. Engranajes en
               movimiento, ruido de máquinas reales, todo funciona bajo la atenta mirada de la reina Victoria y su
@@ -110,11 +120,11 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/FloreriaAtlantico.jpg" class="card-img-top" alt="Florería Atlántico">
           <div class="card-body">
-            <h5 class="card-title">Florería Atlántico</h5>
+            <h5 class="card-title text-center">Florería Atlántico</h5>
             <p class="card-text">Desde la calle parece un local mixto, mezcla de bodega y disquería que además ofrece flores de estación.
               Al bajar una escalera disimulada tras una puerta frigorífico se llega al bar, en el sótano. Está
               ambientado como en las primeras décadas del siglo XX, que remiten a la inmigración y al puerto de Buenos
@@ -124,7 +134,9 @@
         </div>
       </div>
     </div>
-    <footer>
+    <!--FIN CARDS CON BOOTSTRAP-->
+    
+    <footer class="mt-5">
         © 2022 A Donde Vamos?
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,23 @@
+{
+  "name": "camila-gerez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiGerezMedina/Primer_proyecto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiGerezMedina/Primer_proyecto/issues"
+  },
+  "homepage": "https://github.com/CamiGerezMedina/Primer_proyecto#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

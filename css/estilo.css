@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  background-color: rgba(249, 0, 158, 0.248); }
+
+.hero {
+  background-image: url(../img/destacada-bares2.jpg);
+  height: 550px;
+  background-repeat: no-repeat; }
+  .hero .titulo {
+    font-family: "'Lobster Two', cursive";
+    color: rgba(17, 0, 255, 0.93);
+    font-size: 67px;
+    margin-top: -50px; }
+
+.section__carta .carta {
+  margin: 30px 400px 0px 70px;
+  background-color: rgba(215, 109, 247, 0.22);
+  border: groove; }
+  .section__carta .carta .card-text {
+    font-family: "'Roboto Slab', serif"; }
+
+.section__carta .carta {
+  -webkit-animation: slit-in-vertical .45s ease-out both;
+  animation: slit-in-vertical .45s ease-out both;
+  animation-delay: .2s;
+  animation-duration: 1s; }
+
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0); } }
+
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+    transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0; }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+    transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0); } }

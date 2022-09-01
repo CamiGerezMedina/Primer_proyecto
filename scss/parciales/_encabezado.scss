@@ -1,0 +1,17 @@
+.navbar {
+    background-color: $NavbarColor;
+}
+
+.hero{
+    background-image: url(../img/destacada-bares2.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+
+    .titulo {
+        font-family: $FuentePrincipal;
+        color: $ColorTitulo;
+        font-size: 67px;
+        margin-top: -50px;
+    }
+
+}

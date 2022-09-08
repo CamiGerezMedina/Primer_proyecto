@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | A Donde Vamos?</title>
+    <meta name="description" content="Encontrá miles de lugares para una salida con amigos, en pareja o en familia">
+    <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
     </style>
@@ -16,8 +19,8 @@
     </style>
 </head>
 <body>
+  <header>
     <!--COMIENZO NAV CON BOOTSTRAP-->
-    <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +51,7 @@
           </div>
         </div>
     </nav>
-    </header>
+</header>
       <!--FIN NAV CON BOOTSTRAP-->
 
       <!--COMIENZO ENCABEZADO-->
@@ -155,8 +158,24 @@
     </section>
     <!--FIN CARTAS CON BOOTSTRAP-->
     
-    <footer>
+    <footer class="footer">
+      <div class="footer__nav">
+        <a href="./index.html">Inicio</a>
+        <a href="./destacados.html">Destacados</a>
+        <a href="./sugerencias.html">Sugerencias</a>
+        <a href="./reseñas.html">Reseñas</a>
+        <a href="./contacto.html">Contacto</a>
+      </div>
+      <hr class="separador">
+      <div class="redes">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="footer__copy">
         © 2022 A Donde Vamos?
+      </div>
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>

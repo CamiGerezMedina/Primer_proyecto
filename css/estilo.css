@@ -7,13 +7,17 @@
 
 .navbar {
   background-color: rgba(249, 0, 158, 0.248); }
+  .navbar .nav-link {
+    color: rgba(0, 0, 0, 0.711); }
+    .navbar .nav-link:hover {
+      color: rgba(21, 0, 255, 0.629); }
 
 .hero {
   background-image: url(../img/destacada-bares2.jpg);
   height: 550px;
   background-repeat: no-repeat; }
   .hero .titulo {
-    font-family: "'Lobster Two', cursive";
+    font-family: "Lobster Two", cursive;
     color: rgba(17, 0, 255, 0.93);
     font-size: 67px;
     margin-top: -50px; }
@@ -23,7 +27,7 @@
   background-color: rgba(215, 109, 247, 0.22);
   border: groove; }
   .section__carta .carta .card-text {
-    font-family: "'Roboto Slab', serif"; }
+    font-family: "Roboto Slab", serif; }
 
 .section__carta .carta {
   -webkit-animation: slit-in-vertical .45s ease-out both;
@@ -56,3 +60,51 @@
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
     transform: translateZ(0) rotateY(0); } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.667);
+  height: 250px; }
+  .footer .fa-whatsapp, .footer .fa-instagram,
+  .footer .fa-facebook,
+  .footer .fa-twitter {
+    color: #05bb05; }
+  .footer .fa-instagram {
+    color: #ff005d; }
+  .footer .fa-facebook {
+    color: #001eff; }
+  .footer .fa-twitter {
+    color: #0073ff; }
+  .footer .footer__nav a {
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgba(245, 219, 210, 0.697); }
+    .footer .footer__nav a:hover {
+      color: #ff005d; }
+  .footer .separador {
+    width: 60%;
+    margin: 30px 0;
+    border-top: 2px solid;
+    color: white; }
+  .footer .redes {
+    display: flex;
+    gap: 20px; }
+
+.footer__copy {
+  color: rgba(135, 133, 133, 0.898);
+  margin-top: 10px; }
+
+.fa-whatsapp:hover, .fa-instagram:hover,
+.fa-facebook:hover,
+.fa-twitter:hover {
+  color: white;
+  box-shadow: none; }
+
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-twitter:hover {
+  box-shadow: 5px 5px 2px black; }

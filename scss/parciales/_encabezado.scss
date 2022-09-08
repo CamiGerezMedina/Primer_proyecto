@@ -1,5 +1,20 @@
 .navbar {
     background-color: $NavbarColor;
+
+    .nav-link {
+        color: $ColorLinkNav;
+
+        &:hover {
+            color: rgba(21, 0, 255, 0.629);
+        }
+    }
+}
+@mixin titulo ($fuenteLetra, $color, $tamanoFuente, $margen) {
+
+    font-family: $fuenteLetra;
+    color: $color;
+    font-size: $tamanoFuente;
+    margin-top: $margen;
 }
 
 .hero{
@@ -8,10 +23,8 @@
     background-repeat: no-repeat;
 
     .titulo {
-        font-family: $FuentePrincipal;
-        color: $ColorTitulo;
-        font-size: 67px;
-        margin-top: -50px;
+        @include titulo($FuentePrincipal, $ColorTitulo, 67px, -50px);
     }
 
+    
 }

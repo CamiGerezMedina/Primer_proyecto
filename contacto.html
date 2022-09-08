@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | A Donde Vamos?</title>
+    <meta name="description" content="Contactate con nosotros">
+    <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
     </style>
@@ -15,28 +18,46 @@
     </style>
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="nombre">Contáctanos</h1>
-        <nav class="menu__nav"> <!--menu de navegacion-->
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a> 
-                </li>
-                <li>
-                    <a href="./destacados.html">Destacados</a>
-                </li>
-                <li>
-                    <a href="./sugerencias.html">Sugerencias</a>
-                </li>
-                <li>
-                    <a href="./reseñas.html">Reseñas</a>
-                </li>
-                <li>
-                    <a class= "active" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> <!-- fin del menu de navegacion -->
+    <header>
+        <!--COMIENZO NAV CON BOOTSTRAP-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destacados.html">Destacados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sugerencias.html">Sugerencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reseñas.html">Reseñas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
     </header>
+          <!--FIN NAV CON BOOTSTRAP-->
+    
+          <!--COMIENZO ENCABEZADO-->
+        <section class="hero d-flex justify-content-center align-items-center">
+        <h1 class="titulo">Contáctanos</h1>
+        </section>
+          <!--FIN ENCABEZADO-->
         <main>
             <section>
                 <form action="" class="formulario">
@@ -53,9 +74,23 @@
             </section> 
         </main>
         
-    <footer>
-        © 2022 A Donde Vamos?
-    </footer>
+        <footer class="footer">
+            <div class="footer__nav">
+              <a href="./index.html">Inicio</a>
+              <a href="./destacados.html">Destacados</a>
+              <a href="./sugerencias.html">Sugerencias</a>
+              <a href="./reseñas.html">Reseñas</a>
+              <a href="./contacto.html">Contacto</a>
+            </div>
+            <hr class="separador">
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            <div class="footer__copy">
+              © 2022 A Donde Vamos?
+            </div>
+          </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

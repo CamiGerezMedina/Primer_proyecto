@@ -1,0 +1,48 @@
+.formulario {
+    display: inline-grid;
+    background: rgba(0, 0, 0, 0.044);
+    margin-top: 70px;
+    margin-left: 410px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border: groove;
+    padding: 30px;
+
+    .form {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        font-size: 17px;
+    }
+
+    .input {
+        padding-inline: 3px;
+        padding-top: 4px;
+    }
+
+    .texto {
+        max-height: 130px;
+        padding-inline: 3px;
+    }
+
+    #boton {
+        background: rgba(134, 113, 113, 0.24);
+        color: rgba(23, 22, 22, 0.29);
+        padding: 7px 125px 7px 125px;
+        margin-top: 7px;
+        border: outset;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formulario {
+        margin-left: 58px;
+    }
+}

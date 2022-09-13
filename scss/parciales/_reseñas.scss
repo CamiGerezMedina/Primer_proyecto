@@ -1,0 +1,14 @@
+.subtitulo__reseñas {
+    text-align: center;
+}
+
+.reseñas {
+    margin-inline: 10px;
+    width: 90vh;
+}
+
+@media screen and (max-width: 480px) {
+    .titulo {
+        text-align: center;
+    }
+}

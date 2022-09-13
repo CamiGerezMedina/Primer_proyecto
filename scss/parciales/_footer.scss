@@ -51,8 +51,6 @@
     margin-top: 10px;
 }
 
-
-
 .fa-whatsapp {
 
     &:hover {
@@ -68,6 +66,23 @@
     @extend .fa-whatsapp;
      &:hover {
     box-shadow: 5px 5px 2px black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .footer {
+        width: 100vh;
+
+        .footer__nav {
+             a{
+                margin: 0 10px;
+             }
+        }
+
+        .separador {
+            width: 70%;
+        }
     }
 }
 

@@ -1,0 +1,22 @@
+.subtitulo {
+    text-align: center;
+    margin: 10px;
+}
+.row {
+    width: 50vh;
+    margin-inline: 5px;
+
+    .btn {
+        width: 70px;
+        margin-inline: 106px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .row {
+        .btn {
+            margin-inline: 87px;
+        }
+    }
+}

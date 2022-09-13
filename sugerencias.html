@@ -61,20 +61,29 @@
           <!--FIN ENCABEZADO-->
         <main>
             <h2 class="subtitulo">Si no encontrás un lugar, podés sugerirlo acá.</h2>
-            <section>
-                <form action="" class="reseñas">
-                    <label class="form__reseñas" for="nombre">Nombre:</label>
-                    <input class="input__reseñas" type="nombre">
-                    <label class="form__reseñas" for="direccion">Dirección:</label>
-                    <input class="input__reseñas" type="direccion">
-                    <label class="form__reseñas" for="facebook">Facebook:</label>
-                    <input class="input__reseñas" type="facebook">
-                    <label class="form__reseñas" for="instagram">Instagram:</label>
-                    <input class="input__reseñas" type="instagram">
-                    <label class="form__reseñas" for="pagina web">Página Web:</label>
-                    <input class="input__reseñas" type="pagina web">
-                    <input type="button" value="ENVIAR" id="button">
-            </section>
+            <div class="row">
+              <div class="mb-3 mt-5">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label">Facebook</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Instagram</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Página Web</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <input class="btn btn-primary btn-sm mb-5" type="submit" value="Enviar">
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__nav">
@@ -85,10 +94,12 @@
               <a href="./contacto.html">Contacto</a>
             </div>
             <hr class="separador">
+            <div class="redes">
               <i class="fa-brands fa-whatsapp"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
+            </div>
             <div class="footer__copy">
               © 2022 A Donde Vamos?
             </div>

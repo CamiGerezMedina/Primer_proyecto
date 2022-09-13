@@ -26,5 +26,15 @@
         @include titulo($FuentePrincipal, $ColorTitulo, 67px, -50px);
     }
 
-    
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        width: 100vh;
+    }
+
+    .hero {
+        width: 100vh;
+    }
 }

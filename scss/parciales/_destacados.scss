@@ -1,0 +1,36 @@
+.cards {
+
+    .tarjeta {
+        transition: .3s;
+
+        &:hover {
+            border-radius: 5px;
+            transform: scale(1.03);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .card-body {
+            background-color: rgba(255, 4, 0, 0.114);
+        }
+    }
+
+    :nth-child(4) {
+        margin-bottom: 40px;
+    }
+
+    :nth-child(5),
+    :nth-child(6) {
+        @extend :nth-child(4);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .cards {
+        flex-direction: column;
+
+        .tarjeta{
+            width: 100%;
+        }
+    }
+}

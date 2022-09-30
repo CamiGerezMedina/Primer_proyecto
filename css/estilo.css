@@ -30,7 +30,7 @@
     width: 100vh; } }
 
 .section__carta .carta {
-  margin: 30px 400px 0px 70px;
+  margin-inline: 20px;
   background-color: rgba(215, 109, 247, 0.22);
   border: groove; }
   .section__carta .carta .card-text {
@@ -71,6 +71,14 @@
 @media screen and (max-width: 480px) {
   .section__carta .carta {
     width: 95vh;
+    margin-left: 12px; }
+    .section__carta .carta .img-fluid {
+      margin: auto; }
+    .section__carta .carta .card-title {
+      text-align: center; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .section__carta .carta {
     margin-left: 12px; }
     .section__carta .carta .img-fluid {
       margin: auto; }
@@ -133,50 +141,107 @@
     .footer .separador {
       width: 70%; } }
 
-.cards .tarjeta {
-  transition: .3s; }
-  .cards .tarjeta:hover {
-    border-radius: 5px;
-    transform: scale(1.03);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
-  .cards .tarjeta .card-body {
-    background-color: rgba(255, 4, 0, 0.114); }
-
-.cards :nth-child(4), .cards :nth-child(5),
-.cards :nth-child(6) {
-  margin-bottom: 40px; }
+.cards {
+  margin-right: auto;
+  margin-left: auto; }
+  .cards .card {
+    transition: .3s; }
+    .cards .card:hover {
+      border-radius: 5px;
+      transform: scale(1.03);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .cards .card .card-body {
+      background-color: rgba(255, 4, 0, 0.114); }
+  .cards :nth-child(4), .cards :nth-child(5),
+  .cards :nth-child(6) {
+    margin-bottom: 40px; }
 
 @media screen and (max-width: 480px) {
   .cards {
     flex-direction: column; }
+    .cards .card {
+      width: 90vh;
+      margin-left: 2.5vh; }
+    .cards :nth-child(5) {
+      margin-top: -15px; }
+    .cards :nth-child(6) {
+      margin-bottom: 40px;
+      margin-top: -15px; } }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "card card" "card card" "card card"; }
+    .cards :nth-child(4), .cards :nth-child(5),
+    .cards :nth-child(6) {
+      margin-bottom: 0%; }
+    .cards :nth-child(5),
+    .cards :nth-child(6) {
+      margin-bottom: 40px; }
     .cards .tarjeta {
       width: 100%; } }
+
+.contenido {
+  border: solid;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-evenly; }
+  .contenido .checkbox {
+    align-self: center; }
+    .contenido .checkbox .checks {
+      height: 32vh; }
+  .contenido .form__sugerencias {
+    width: 50vh; }
+    .contenido .form__sugerencias .botton {
+      background-color: black;
+      color: #10dada;
+      width: 70px;
+      margin-inline: 106px; }
 
 .subtitulo {
   text-align: center;
   margin: 10px; }
 
-.row {
-  width: 50vh;
-  margin-inline: 5px; }
-  .row .btn {
-    width: 70px;
-    margin-inline: 106px; }
-
 @media screen and (max-width: 480px) {
-  .row .btn {
-    margin-inline: 87px; } }
+  .contenido {
+    display: block;
+    width: 100%;
+    margin-inline: 10vh; }
+    .contenido .checkbox {
+      margin-top: inherit;
+      margin-inline: 28vh; }
+    .contenido .form__sugerencias {
+      margin-inline: auto; }
+      .contenido .form__sugerencias .botton {
+        margin-inline: auto; }
+  .subtitulo {
+    margin-inline-start: 19vh; } }
 
 .subtitulo__reseñas {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
   text-align: center; }
 
 .reseñas {
-  margin-inline: 10px;
-  width: 90vh; }
+  margin-inline: 20px;
+  width: 45vw; }
 
 @media screen and (max-width: 480px) {
-  .titulo {
-    text-align: center; } }
+  .subtitulo__reseñas {
+    margin-inline-start: 20vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh; }
+  .reseñas {
+    width: 80vw; } }
+
+@media (min-width: 481px) and (max-width: 769px) {
+  .reseñas {
+    width: 60vw; } }
 
 .formulario {
   display: inline-grid;
@@ -212,4 +277,8 @@
 
 @media screen and (max-width: 480px) {
   .formulario {
-    margin-left: 58px; } }
+    margin-left: 25%; } }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .formulario {
+    margin-left: 25%; } }

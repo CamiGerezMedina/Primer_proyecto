@@ -1,7 +1,7 @@
 .section__carta {
 
     .carta {
-        margin: 30px 400px 0px 70px;
+        margin-inline: 20px; 
         background-color: rgba(215, 109, 247, 0.22);
         border: groove;
 
@@ -37,4 +37,21 @@
             }
         } 
     }   
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .section__carta{
+        
+        .carta {
+            margin-left: 12px;
+
+            .img-fluid {
+                margin: auto;
+            }
+
+            .card-title {
+                text-align: center;
+            }
+        } 
+    }  
 }

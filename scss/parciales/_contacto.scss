@@ -43,6 +43,12 @@
 
 @media screen and (max-width: 480px) {
     .formulario {
-        margin-left: 58px;
+        margin-left: 25%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+    .formulario {
+        margin-left: 25%;
     }
 }

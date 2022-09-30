@@ -1,6 +1,7 @@
 .cards {
-
-    .tarjeta {
+    margin-right: auto;
+    margin-left: auto;
+    .card {
         transition: .3s;
 
         &:hover {
@@ -25,12 +26,48 @@
 }
 
 @media screen and (max-width: 480px) {
-
+    
     .cards {
         flex-direction: column;
 
-        .tarjeta{
+        .card{
+            width: 90vh;
+            margin-left: 2.5vh; 
+        }
+    
+        :nth-child(5) {
+            margin-top: -15px;
+        }
+        :nth-child(6) {
+            margin-bottom: 40px;
+            margin-top: -15px;
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "card card"
+        "card card"
+        "card card";
+
+        :nth-child(4) {
+            margin-bottom: 0%;
+        }
+
+        :nth-child(5),
+        :nth-child(6) {
+            margin-bottom: 40px;
+        }
+
+        .tarjeta {
             width: 100%;
         }
     }
 }
+
+

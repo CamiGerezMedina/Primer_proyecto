@@ -1,14 +1,30 @@
 .subtitulo__reseñas {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
     text-align: center;
 }
 
 .reseñas {
-    margin-inline: 10px;
-    width: 90vh;
+    margin-inline: 20px;
+    width: 45vw;
 }
 
 @media screen and (max-width: 480px) {
-    .titulo {
-        text-align: center;
+    .subtitulo__reseñas {
+        margin-inline-start: 20vw;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .reseñas {
+        width: 80vw;
     }
 }
+
+@media (min-width: 481px) and (max-width: 769px) {
+    .reseñas {
+        width: 60vw;
+    }
+    
+}
+

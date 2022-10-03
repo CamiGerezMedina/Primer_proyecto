@@ -28,7 +28,7 @@
             color: rgba(245, 219, 210, 0.697);
 
             &:hover {
-                color: map-get($Redes, instagram);
+                color: rgba(255, 0, 0, 0.629)
             }
         }
     }
@@ -55,7 +55,6 @@
 
     &:hover {
         color: white;
-        box-shadow: none
     }
     
 }
@@ -64,9 +63,6 @@
 .fa-facebook,
 .fa-twitter {
     @extend .fa-whatsapp;
-     &:hover {
-    box-shadow: 5px 5px 2px black;
-    }
 }
 
 @media screen and (max-width: 480px) {

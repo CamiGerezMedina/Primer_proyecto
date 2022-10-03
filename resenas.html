@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | A Donde Vamos?</title>
-  <meta name="description" content="Contactate con nosotros">
+  <title>Reseñas | A Donde Vamos?</title>
+  <meta name="description"
+    content="¿Visitaste algun lugar que se encuentre en nuestro sitio web? Contanos que te pareció">
   <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/estilo.css">
@@ -20,7 +21,7 @@
 </head>
 
 <header>
-  <!--NAV CON BOOTSTRAP-->
+  <!--COMIENZO NAV CON BOOTSTRAP-->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -39,10 +40,10 @@
             <a class="nav-link" href="sugerencias.html">Sugerencias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="resenas.html">Reseñas</a>
+            <a class="nav-link active" aria-current="page" href="resenas.html">Reseñas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -57,21 +58,32 @@
 <body>
   <!--ENCABEZADO-->
   <section class="hero d-flex justify-content-center align-items-center">
-    <h1 class="titulo">Contáctanos</h1>
+    <h1 class="titulo">Reseñas</h1>
   </section>
+  <!--FIN ENCABEZADO-->
   <main>
-    <section class="contacto">
-      <form action="" class="formulario">
-        <label class="form" for="nombre">Nombre:</label>
-        <input class="input" type="nombre">
-        <label class="form" for="apellido"> Apellido:</label>
-        <input class="input" type="apellido">
-        <label class="form" for="e-mail">E-mail:</label>
-        <input class="input" type="e-mail">
-        <label class="form" for="mensaje">Mensaje:</label>
-        <textarea class="texto" name="mensaje" id="" cols="30" rows="10"></textarea>
-        <input type="button" value="ENVIAR" id="boton">
-      </form>
+    <h2 class="subtitulo__reseñas">Si visitaste algún lugar nos gustaría que compartas tu opinión acá</h2>
+    <section class="reseñas">
+      <div class="input-group mb-3">
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Seleccione el lugar</option>
+          <option value="1">Bar Danzon</option>
+          <option value="2">Basa Bar</option>
+          <option value="3">Parque Bar</option>
+          <option value="4">Oh No! Lulu Bar</option>
+          <option value="5">Presidente Bar</option>
+          <option value="6">Bar Rey de Copas</option>
+          <option value="7">Uptown Bar</option>
+          <option value="8">The Hole Bar</option>
+          <option value="9">Bar Tres Monos</option>
+          <option value="10">Victoria Brown Bar</option>
+          <option value="11">Florería Atlántico</option>
+        </select>
+      </div>
+      <div class="mb-5 mt-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Contanos que te pareció:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+      </div>
     </section>
   </main>
   <!--FOOTER-->

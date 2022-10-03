@@ -1,179 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugerencias | A Donde Vamos?</title>
-    <meta name="description" content="Sugerinos tu lugar favorito y nosotros lo agregamos">
-    <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugerencias | A Donde Vamos?</title>
+  <meta name="description" content="Sugerinos tu lugar favorito y nosotros lo agregamos">
+  <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap');
+  </style>
 </head>
 
+<header>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destacados.html">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="sugerencias.html">Sugerencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resenas.html">Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <body>
-    <header>
-        <!--COMIENZO NAV CON BOOTSTRAP-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="destacados.html">Destacados</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sugerencias.html">Sugerencias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="reseñas.html">Reseñas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-    </header>
-          <!--FIN NAV CON BOOTSTRAP-->
-    
-          <!--COMIENZO ENCABEZADO-->
-        <section class="hero d-flex justify-content-center align-items-center">
-        <h1 class="titulo">Sugerencias</h1>
-        </section>
-          <!--FIN ENCABEZADO-->
-        <main>
-            <h2 class="subtitulo">Si no encontrás un lugar, podés sugerirlo acá.</h2>
-          <div class="contenido">
-          <div class="checkbox">
-          <div class="checks">
-            <h6>Elegí la categoría</h6>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-              <label class="form-check-label" for="exampleRadios1">
-                Bar
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Cafetería
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
-                Cervecería
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
-              <label class="form-check-label" for="exampleRadios4">
-                Pub
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
-              <label class="form-check-label" for="exampleRadios5">
-                Restaurante
-              </label>
-            </div>
+  <!--ENCABEZADO-->
+  <section class="hero d-flex justify-content-center align-items-center">
+    <h1 class="titulo">Sugerencias</h1>
+  </section>
+  <!--CARDS-->
+  <main>
+    <h2 class="subtitulo">Si no encontrás un lugar, podés sugerirlo acá.</h2>
+    <div class="contenido">
+      <div class="checkbox">
+        <div class="checks">
+          <h6>Elegí la categoría</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              Bar
+            </label>
           </div>
-          <div class="checks">
-            <h6>Elegí la ubicación</h6>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
-              <label class="form-check-label" for="exampleRadios6">
-                Belgrano
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7">
-              <label class="form-check-label" for="exampleRadios7">
-                Caballito
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8">
-              <label class="form-check-label" for="exampleRadios8">
-                Palermo
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option9">
-              <label class="form-check-label" for="exampleRadios9">
-                Recoleta
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option10">
-              <label class="form-check-label" for="exampleRadios10">
-                Retiro
-              </label>
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Cafetería
+            </label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              Cervecería
+            </label>
           </div>
-            <div class="row form__sugerencias">
-              <div class="mb-3 mt-5">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3 ">
-                <label for="exampleFormControlInput1" class="form-label">Facebook</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Instagram</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Página Web</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <input class="btn btn-sm mb-5 botton" type="submit" value="Enviar">
-            </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4">
+              Pub
+            </label>
           </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__nav">
-              <a href="./index.html">Inicio</a>
-              <a href="./destacados.html">Destacados</a>
-              <a href="./sugerencias.html">Sugerencias</a>
-              <a href="./reseñas.html">Reseñas</a>
-              <a href="./contacto.html">Contacto</a>
-            </div>
-            <hr class="separador">
-            <div class="redes">
-              <i class="fa-brands fa-whatsapp"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="footer__copy">
-              © 2022 A Donde Vamos?
-            </div>
-        </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+            <label class="form-check-label" for="exampleRadios5">
+              Restaurante
+            </label>
+          </div>
+        </div>
+        <div class="checks">
+          <h6>Elegí la ubicación</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+            <label class="form-check-label" for="exampleRadios6">
+              Belgrano
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios7" value="option7">
+            <label class="form-check-label" for="exampleRadios7">
+              Caballito
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios8" value="option8">
+            <label class="form-check-label" for="exampleRadios8">
+              Palermo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios9" value="option9">
+            <label class="form-check-label" for="exampleRadios9">
+              Recoleta
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios10" value="option10">
+            <label class="form-check-label" for="exampleRadios10">
+              Retiro
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row form__sugerencias">
+        <div class="mb-3 mt-5">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3 ">
+          <label for="exampleFormControlInput1" class="form-label">Facebook</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Instagram</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Página Web</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <input class="btn btn-sm mb-5 botton" type="submit" value="Enviar">
+      </div>
+    </div>
+  </main>
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer__nav">
+      <a href="./index.html">Inicio</a>
+      <a href="./destacados.html">Destacados</a>
+      <a href="./sugerencias.html">Sugerencias</a>
+      <a href="./reseñas.html">Reseñas</a>
+      <a href="./contacto.html">Contacto</a>
+    </div>
+    <hr class="separador">
+    <div class="redes">
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="footer__copy">
+      © 2022 A Donde Vamos?
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -11,7 +11,8 @@
         align-self: center;
 
         .checks{
-            height: 32vh;
+            margin-top: 40px;
+            margin-bottom: 30px;
         }
     }
 
@@ -20,8 +21,8 @@
         width: 50vh;
     
         .botton {
-            background-color: black;
-            color: rgb(16, 218, 218);
+            background-color: rgb(152, 152, 152);
+            color: rgb(0, 0, 0);
             width: 70px;
             margin-inline: 106px;
         }
@@ -41,6 +42,8 @@
         margin-inline: 10vh;
 
         .checkbox{
+            display: flex;
+            flex-direction: column;
             margin-top: inherit;
             margin-inline: 28vh;
         }

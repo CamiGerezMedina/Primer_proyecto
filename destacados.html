@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destacados | A Donde Vamos?</title>
-    <meta name="description" content="Encontrá los lugares mas destacados segun las reseñas">
-    <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destacados | A Donde Vamos?</title>
+  <meta name="description" content="Encontrá los lugares mas destacados segun las reseñas">
+  <meta name="keywords" content="Bares, Restaurantes, Cafeterias, Cervecerias, Comida">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="https://kit.fontawesome.com/86635e30da.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto+Slab:wght@200;400&display=swap');
+  </style>
 </head>
-<body>
-  <header>
-    <!--COMIENZO NAV CON BOOTSTRAP-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="destacados.html">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sugerencias.html">Sugerencias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="reseñas.html">Reseñas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
+
+<header>
+  <!--NAV CON BOOTSTRAP-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="destacados.html">Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sugerencias.html">Sugerencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resenas.html">Reseñas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
-      <!--FIN NAV CON BOOTSTRAP-->
 
-      <!--COMIENZO ENCABEZADO-->
-    <section class="hero d-flex justify-content-center align-items-center">
+<body>
+  <!--ENCABEZADO-->
+  <section class="hero d-flex justify-content-center align-items-center">
     <h1 class="titulo">Destacados</h1>
-    </section>
-      <!--FIN ENCABEZADO-->
-
-      <!--COMIENZO CARDS CON BOOTSTRAP-->
+  </section>
+  <!--CARDS CON BOOTSTRAP-->
+  <main>
     <div class="row row-cols-3 row-cols-md-3 g-4 mt-5 cards">
       <div class="col tarjeta">
         <div class="card h-100">
           <img src="./img/ReyDeCopasBar.jpg" class="card-img-top img-fluid" alt="Bar Rey de Copas">
           <div class="card-body">
             <h5 class="card-title text-center">Bar Rey de Copas</h5>
-            <p class="card-text">Rey de Copas se encuentra en una vieja casona de Palermo Soho y ofrece un multiespacio para aquellos
+            <p class="card-text">Rey de Copas se encuentra en una vieja casona de Palermo Soho y ofrece un multiespacio
+              para aquellos
               amantes del arte y de la buena gastronomía. Cuenta con una cálida ambientación, piezas de arte en
               cada ambiente del lugar y un techo corredizo que permite ver las estrellas. En la carta podés
               encontrar todo tipo de tapeos y tragos internacionales, de autor y de vanguardia.</p>
@@ -78,7 +80,8 @@
           <img src="./img/Uptownbar.jpg" class="card-img-top" alt="Bar Uptown">
           <div class="card-body">
             <h5 class="card-title text-center">Uptown Bar</h5>
-            <p class="card-text">Revolucionario por donde se lo mire, Uptown recrea magníficamente una estación de metro Neoyorquina, pero
+            <p class="card-text">Revolucionario por donde se lo mire, Uptown recrea magníficamente una estación de metro
+              Neoyorquina, pero
               es un bar que tan solo al bajar esas escaleras te transporta directamente allí. Es una réplica tan
               exacta que hay que pasar el torniquete y presionar el botón verde que abre las puertas del vagón. Y no
               solo la ambientación, sino también la carta están inspiradas en la gastronomía de New York.</p>
@@ -90,7 +93,8 @@
           <img src="./img/TheHoleBar.jpg" class="card-img-top" alt="The Hole Bar">
           <div class="card-body">
             <h5 class="card-title text-center">The Hole Bar</h5>
-            <p class="card-text">The Hole es un bar conceptual ubicado en Palermo que recrea la prisión de Alcatraz, es un lugar lúgubre
+            <p class="card-text">The Hole es un bar conceptual ubicado en Palermo que recrea la prisión de Alcatraz, es
+              un lugar lúgubre
               con celdas diseminadas en dos pisos. Con una carta de tragos premium y cócteles diseñados por bartenders
               reconocidos, es un bar que ofrece la posibilidad de experimentar una sensación única, trasladándote a un
               lugar icónico, ideal para una salida con amigos.</p>
@@ -115,7 +119,8 @@
           <img src="./img/VictoriaBrownBar.jpg" class="card-img-top" alt="Bar Victoria Brown">
           <div class="card-body">
             <h5 class="card-title text-center">Victoria Brown Bar</h5>
-            <p class="card-text">Victoria Brown está inspirado en la época victoriana, mezcla de tradición y modernidad, el bar es una
+            <p class="card-text">Victoria Brown está inspirado en la época victoriana, mezcla de tradición y modernidad,
+              el bar es una
               celebración del poder de la invención más importante del último siglo: la máquina. Engranajes en
               movimiento, ruido de máquinas reales, todo funciona bajo la atenta mirada de la reina Victoria y su
               amante secreto.</p>
@@ -127,7 +132,8 @@
           <img src="./img/FloreriaAtlantico.jpg" class="card-img-top" alt="Florería Atlántico">
           <div class="card-body">
             <h5 class="card-title text-center">Florería Atlántico</h5>
-            <p class="card-text">Desde la calle parece un local mixto, mezcla de bodega y disquería que además ofrece flores de estación.
+            <p class="card-text">Desde la calle parece un local mixto, mezcla de bodega y disquería que además ofrece
+              flores de estación.
               Al bajar una escalera disimulada tras una puerta frigorífico se llega al bar, en el sótano. Está
               ambientado como en las primeras décadas del siglo XX, que remiten a la inmigración y al puerto de Buenos
               Aires. La carta está dividida por países de acuerdo al alcohol fuerte empleado como base en cada
@@ -136,28 +142,28 @@
         </div>
       </div>
     </div>
-    <!--FIN CARDS CON BOOTSTRAP-->
-    
-    <footer class="footer">
-      <div class="footer__nav">
-        <a href="./index.html">Inicio</a>
-        <a href="./destacados.html">Destacados</a>
-        <a href="./sugerencias.html">Sugerencias</a>
-        <a href="./reseñas.html">Reseñas</a>
-        <a href="./contacto.html">Contacto</a>
-      </div>
-      <hr class="separador">
-      <div class="redes">
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
-      <div class="footer__copy">
-        © 2022 A Donde Vamos?
-      </div>
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+  </main>
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer__nav">
+      <a href="./index.html">Inicio</a>
+      <a href="./destacados.html">Destacados</a>
+      <a href="./sugerencias.html">Sugerencias</a>
+      <a href="./reseñas.html">Reseñas</a>
+      <a href="./contacto.html">Contacto</a>
+    </div>
+    <hr class="separador">
+    <div class="redes">
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+    </div>
+    <div class="footer__copy">
+      © 2022 A Donde Vamos?
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

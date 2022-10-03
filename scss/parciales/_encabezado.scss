@@ -1,11 +1,11 @@
 .navbar {
-    background-color: $NavbarColor;
+    background-color: $NavbarColor; 
 
     .nav-link {
         color: $ColorLinkNav;
 
         &:hover {
-            color: rgba(21, 0, 255, 0.629);
+            color: rgba(255, 0, 0, 0.629);
         }
     }
 }
@@ -20,6 +20,7 @@
 .hero{
     background-image: url(../img/destacada-bares2.jpg);
     height: 550px;
+    background-size: cover;
     background-repeat: no-repeat;
 
     .titulo {

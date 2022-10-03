@@ -7,19 +7,20 @@
   box-sizing: border-box; }
 
 .navbar {
-  background-color: rgba(249, 0, 158, 0.248); }
+  background-color: rgba(112, 189, 200, 0.897); }
   .navbar .nav-link {
-    color: rgba(0, 0, 0, 0.711); }
+    color: #faf3f3; }
     .navbar .nav-link:hover {
-      color: rgba(21, 0, 255, 0.629); }
+      color: rgba(255, 0, 0, 0.629); }
 
 .hero {
   background-image: url(../img/destacada-bares2.jpg);
   height: 550px;
+  background-size: cover;
   background-repeat: no-repeat; }
   .hero .titulo {
     font-family: "Lobster Two", cursive;
-    color: rgba(17, 0, 255, 0.93);
+    color: rgba(8, 0, 255, 0.878);
     font-size: 67px;
     margin-top: -50px; }
 
@@ -108,7 +109,7 @@
     text-decoration: none;
     color: rgba(245, 219, 210, 0.697); }
     .footer .footer__nav a:hover {
-      color: #ff005d; }
+      color: rgba(255, 0, 0, 0.629); }
   .footer .separador {
     width: 60%;
     margin: 30px 0;
@@ -125,13 +126,7 @@
 .fa-whatsapp:hover, .fa-instagram:hover,
 .fa-facebook:hover,
 .fa-twitter:hover {
-  color: white;
-  box-shadow: none; }
-
-.fa-instagram:hover,
-.fa-facebook:hover,
-.fa-twitter:hover {
-  box-shadow: 5px 5px 2px black; }
+  color: white; }
 
 @media screen and (max-width: 480px) {
   .footer {
@@ -194,12 +189,13 @@
   .contenido .checkbox {
     align-self: center; }
     .contenido .checkbox .checks {
-      height: 32vh; }
+      margin-top: 40px;
+      margin-bottom: 30px; }
   .contenido .form__sugerencias {
     width: 50vh; }
     .contenido .form__sugerencias .botton {
-      background-color: black;
-      color: #10dada;
+      background-color: #989898;
+      color: black;
       width: 70px;
       margin-inline: 106px; }
 
@@ -213,6 +209,8 @@
     width: 100%;
     margin-inline: 10vh; }
     .contenido .checkbox {
+      display: flex;
+      flex-direction: column;
       margin-top: inherit;
       margin-inline: 28vh; }
     .contenido .form__sugerencias {
